@@ -1,0 +1,41 @@
+-->In Home
+<header-directive></header-directive>
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+
+<div class="row">
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+        Select Application
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+        <input type="text" ng-model="mainCtrl.selectedAppName" uib-typeahead="application.name for application in mainCtrl.applications | filter:{name : $viewValue} | limitTo:8" class="form-control" typeahead-editable="false"  typeahead-on-select="homeCtrl.getSelectedApp($item, $model, $label, $event)" placeholder="Start typing Application name">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1">
+        <button ng-click="homeCtrl.go('application')" ng-hide="!mainCtrl.selectedAppName">Go</button>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2">
+        Select Environment
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+        <input type="text" ng-model="mainCtrl.selectedEnvName" uib-typeahead="environment.name for environment in mainCtrl.environments | filter:{name : $viewValue} | limitTo:8" class="form-control" typeahead-editable="false" typeahead-on-select="homeCtrl.getSelectedEnv($item, $model, $label, $event)" placeholder="Start typing Environment name"> 
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1">
+        <button ng-click="homeCtrl.go('environment')" ng-hide="!mainCtrl.selectedEnvName">Go</button>
+    </div>
+
+
+</div>

@@ -1,0 +1,52 @@
+-->In Header
+<div class='row well' style="background-color: #c9d1d6" >
+    <div class='col-sm-12'>
+        <div class="col-sm-2">
+            <label>{{mainCtrl.title}}</label>
+        </div>
+        <div class="col-sm-4"></div>
+        <div ng-if="headerCtrl.showAppInput">
+            <div class="col-sm-1">
+                <label>Application</label> 
+            </div>
+            <div class="col-sm-2">
+                <input type="text" ng-model="mainCtrl.selectedAppName" uib-typeahead="application.name for application in mainCtrl.applications | filter:{name : $viewValue} | limitTo:8" class="form-control" placeholder="Select Application" typeahead-editable="false"  typeahead-on-select="headerCtrl.getSelectedApp($item, $model, $label, $event)" placeholder="Start typing Application name">
+            </div>
+        </div>
+        <div ng-if="headerCtrl.showEnvInput && mainCtrl.selectedApp" >
+            <div class="col-sm-1">
+                <label>Environment</label> 
+            </div>
+            <div class="col-sm-2">
+                <div class="btn-group" uib-dropdown>
+                    <button uib-dropdown-toggle class="btn btn-primary" >
+                       {{mainCtrl.selectedEnv.name || 'Select Environment'}} 
+                       <span class="caret">
+
+                       </span>
+                   </button>
+                   <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                       <li ng-repeat="environment in mainCtrl.environments"><a href="" ng-click="headerCtrl.getSelectedEnv(environment)">{{environment.name}}</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+   <hr>
+   <div class='col-sm-12' ng-if="headerCtrl.showTabs">
+    <div class="col-sm-1">
+        <a ui-sref="main.home()">Home</a>
+    </div>
+    <div class="col-sm-1">
+        <a ui-sref="main.app()">App Info</a>
+    </div>
+    <div class="col-sm-1">
+        <a ui-sref="main.env()">Env Info</a>
+    </div>
+</div>
+
+
+
+</div>
+
+

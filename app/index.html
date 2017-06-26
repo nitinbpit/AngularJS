@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  <script src="ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="phone-list/phone-list.module.js"></script>
+  <script src="phone-list/phone-list.component.js"></script>
+  <script src="phone-detail/phone-detail.module.js"></script>
+  <script src="phone-detail/phone-detail.component.js"></script>
+  <script src="nitin/main.ctrl.js"></script>
+  <script src="nitin/home.ctrl.js"></script>
+  <script src="nitin/environment.ctrl.js"></script>
+  
+
+  <script src="nitin/Header/header.drctv.js"></script>
+  <script src="nitin/Sidebar/sidebar.drctv.js"></script>
+
+  
+  <script src="nitin/Services/application.srvc.js"></script>
+  <script src="nitin/Services/environment.srvc.js"></script>
+</head>
+
+<body style="max-width:1600px; margin:auto">
+
+  <!--<div ng-view></div>-->
+
+
+  <div ui-view></div>
+  <div ui-view="parent"></div>
+  <div ui-view="header"></div>
+  <div ui-view="nav"></div>
+  <div ui-view="container"></div>
+
+
+
+</body>
+
+</html>

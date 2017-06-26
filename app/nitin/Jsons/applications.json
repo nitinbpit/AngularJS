@@ -1,0 +1,14 @@
+{
+	"applications" : [
+		{
+			"name" : "Marvels",
+			"id" : "001",
+			"description" : "Best Comic"
+		},
+		{
+			"name" : "DC",
+			"id" : "002",
+			"description" : "Second Best Comic"
+		}
+	]
+}

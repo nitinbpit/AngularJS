@@ -1,0 +1,66 @@
+{
+	"environments" : [
+		{
+			"name" : "Ironman",
+			"id" : "001",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},
+		{
+			"name" : "Hawk Eye",
+			"id" : "002",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Black Widow",
+			"id" : "003",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Thor",
+			"id" : "004",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Spiderman",
+			"id" : "005",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Vision",
+			"id" : "006",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Antman",
+			"id" : "007",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "001"
+		},{
+			"name" : "Batman",
+			"id" : "008",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "002"
+		},{
+			"name" : "Aquaman",
+			"id" : "009",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "002"
+		},{
+			"name" : "Flash",
+			"id" : "010",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "002"
+		},{
+			"name" : "Superman",
+			"id" : "011",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "002"
+		},{
+			"name" : "Wonder Woman",
+			"id" : "012",
+			"description" : "Default application for our applicaiton",
+			"applicationId" : "002"
+		}
+	]
+}
